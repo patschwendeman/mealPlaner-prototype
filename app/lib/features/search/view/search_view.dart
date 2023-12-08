@@ -1,19 +1,43 @@
+import 'package:app/features/search/view/top_bar/top_bar.dart';
+import 'package:app/shared/variables/colors.dart';
 import 'package:app/shared/widgets/bottom_nav/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {
-  const SearchView({super.key});
+  const SearchView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: BottomNav(),
-      body: Text(
-        "Search Screen",
-        style: TextStyle(color: Colors.white),
+    return Scaffold(
+      bottomNavigationBar: const BottomNav(),
+      body: SafeArea(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          color: AppColors.grey,
+          child: CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: <Widget>[
+              const CustomAppBar(),
+              SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  (BuildContext context, int index) {
+                    return Container(
+                      color: Colors.transparent,
+                      height: 100.0,
+                      child: Center(
+                        child: Text('$index',
+                            textScaleFactor: 5.0),
+                      ),
+                    );
+                  },
+                  childCount: 20,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-
-//TODO: Sliver Topbar for appear and dissapear
