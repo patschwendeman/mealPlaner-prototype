@@ -1,11 +1,13 @@
-import 'package:app/widgets/homeScreen/DailyBar.dart';
-import 'package:app/widgets/homeScreen/MacroBar.dart';
+import 'package:app/features/home/widgets/daily_bar.dart';
+import 'package:app/features/home/widgets/macro_bar.dart';
+import 'package:app/shared/variables/colors.dart';
 import 'package:flutter/material.dart';
 
 class DailyBarsCard extends StatefulWidget {
-  const DailyBarsCard({super.key,  required this.colorList});
+  const DailyBarsCard({super.key});
 
-  final List<Color> colorList;
+  
+
 
   @override
   State<DailyBarsCard> createState() => _DailyBarsCardState();
@@ -25,17 +27,17 @@ class _DailyBarsCardState extends State<DailyBarsCard> {
       child: Column(
         children: [
           MacroBar(
-              color: widget.colorList[3], width: 1, amound: '100%', label: ''),
+              color: AppColors.green, width: 1, amound: '100%', label: ''),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      DailyBar(color: widget.colorList[0], label: 'M'),
-                      DailyBar(color: widget.colorList[3], label: 'T'),
-                      DailyBar(color: widget.colorList[3], label: 'W'),
-                      DailyBar(color: widget.colorList[3], label: 'T'),
-                      DailyBar(color: widget.colorList[3], label: 'F'),
-                      DailyBar(color: widget.colorList[0], label: 'S'),
-                      DailyBar(color: widget.colorList[4], label: 'S'),
+                      DailyBar(color: AppColors.red, label: 'M'),
+                      DailyBar(color: AppColors.green, label: 'T'),
+                      DailyBar(color: AppColors.green, label: 'W'),
+                      DailyBar(color: AppColors.green, label: 'T'),
+                      DailyBar(color: AppColors.red, label: 'F'),
+                      DailyBar(color: AppColors.green, label: 'S'),
+                      DailyBar(color: AppColors.grey, label: 'S'),
                     ],
                   ),
                   ]

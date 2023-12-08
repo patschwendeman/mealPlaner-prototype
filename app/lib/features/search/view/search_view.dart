@@ -1,8 +1,8 @@
-import 'package:app/widgets/BottomNav.dart';
+import 'package:app/shared/widgets/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
-class SearchScreen extends StatelessWidget {
-  const SearchScreen({super.key});
+class SearchView extends StatelessWidget {
+  const SearchView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,5 +16,4 @@ class SearchScreen extends StatelessWidget {
   }
 }
 
-
-//Sliver Topbar for appear and dissapear
+//TODO: Sliver Topbar for appear and dissapear
