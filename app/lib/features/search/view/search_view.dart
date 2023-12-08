@@ -1,4 +1,4 @@
-import 'package:app/widgets/bottom_nav.dart';
+import 'package:app/shared/widgets/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {

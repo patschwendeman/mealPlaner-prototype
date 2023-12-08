@@ -1,25 +1,14 @@
 import 'package:app/features/home/widgets/daily_bars_card.dart';
 import 'package:app/features/home/widgets/macro_bars_card.dart';
 import 'package:app/features/home/widgets/pie_chart_card.dart';
-import 'package:app/widgets/bottom_nav.dart';
+import 'package:app/shared/widgets/bottom_nav.dart';
 import 'package:flutter/material.dart';
+import 'package:app/shared/variables/colors.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
-  static const dataMap = <String, double>{
-    "Protein": 4.5,
-    "Fat": 3.5,
-    "Carbs": 2.0,
-  };
-
-  static const colorList = <Color>[
-    Color(0xFFEB5D59),
-    Color(0xFFE8EB59),
-    Color(0xFFA7CDEA),
-    Color(0xFF5DA84B),
-    Color(0xFFF1F1F1),
-  ];
+  
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +18,7 @@ class HomeView extends StatelessWidget {
           child: Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            color: const Color(0xFFF1F1F1),
+            color: AppColors.grey,
             child: Center(
                 child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 26.0),
@@ -37,12 +26,9 @@ class HomeView extends StatelessWidget {
                       /* mainAxisAlignment: MainAxisAlignment.spaceBetween, */
 
                       children: [
-                        const PieChartCard(
-                          dataMap: dataMap,
-                          colorList: colorList,
-                        ),
-                        const MacroBarsCard(colorList: colorList),
-                        const DailyBarsCard(colorList: colorList),
+                        const PieChartCard(),
+                        MacroBarsCard(),
+                        const DailyBarsCard(),
                         Container(
                           width: MediaQuery.of(context).size.width,
                           height: 120,

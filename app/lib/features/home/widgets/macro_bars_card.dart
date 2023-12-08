@@ -1,10 +1,8 @@
 import 'package:app/features/home/widgets/macro_bar.dart';
+import 'package:app/shared/variables/colors.dart';
 import 'package:flutter/material.dart';
 
 class MacroBarsCard extends StatefulWidget {
-  const MacroBarsCard({super.key, required this.colorList});
-
-  final List<Color> colorList;
 
   @override
   State<MacroBarsCard> createState() => _MacroBarsCardState();
@@ -21,18 +19,18 @@ class _MacroBarsCardState extends State<MacroBarsCard> {
         color: Colors.white,
         borderRadius: BorderRadius.circular(10.0),
       ),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           MacroBar(
-              color: widget.colorList[0],
+              color: AppColors.red,
               width: 0.25,
               amound: '100g',
               label: 'Protein'),
           MacroBar(
-              color: widget.colorList[1], width: 0.25, amound: '100g', label: 'Carbs'),
+              color: AppColors.blue, width: 0.25, amound: '100g', label: 'Carbs'),
           MacroBar(
-              color: widget.colorList[2], width: 0.25, amound: '100g', label: 'Fat'),
+              color: AppColors.yellow, width: 0.25, amound: '100g', label: 'Fat'),
         ],
       ),
     );
