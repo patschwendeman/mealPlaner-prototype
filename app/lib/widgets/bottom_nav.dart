@@ -1,8 +1,7 @@
-import 'package:app/screens/homeScreen.dart';
-import 'package:app/screens/searchScreen.dart';
+import 'package:app/features/home/view/home_screen.dart';
+import 'package:app/features/mealplans/view/mealplans_screen.dart';
+import 'package:app/features/searchScreen.dart';
 import 'package:flutter/material.dart';
-
-import '../screens/OrderScreen.dart';
 
 class BottomNav extends StatelessWidget implements PreferredSizeWidget {
   const BottomNav({super.key});
@@ -58,7 +57,7 @@ class BottomNav extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(context,
                 PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) =>
-                      const OrderScreen(),
+                      const MealPlansScreen(),
                   transitionsBuilder: (context, animation, secondaryAnimation, child) {
                     return child;
                   },

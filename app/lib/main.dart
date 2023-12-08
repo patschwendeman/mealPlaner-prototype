@@ -1,6 +1,6 @@
 
-import 'package:app/screens/HomeScreen.dart';
-import 'package:app/screens/searchScreen.dart';
+import 'package:app/features/home/view/home_screen.dart';
+import 'package:app/features/searchScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,11 +1,11 @@
-import 'package:app/widgets/BottomNav.dart';
-import 'package:app/widgets/homeScreen/DailyBarsCard.dart';
-import 'package:app/widgets/homeScreen/MacroBarsCard.dart';
+import 'package:app/features/home/widgets/daily_bars_card.dart';
+import 'package:app/features/home/widgets/macro_bars_card.dart';
+import 'package:app/features/home/widgets/pie_chart_card.dart';
+import 'package:app/widgets/bottom_nav.dart';
 import 'package:flutter/material.dart';
-import 'package:app/widgets/homeScreen/PieChartCard.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
 
   static const dataMap = <String, double>{
     "Protein": 4.5,
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             color: const Color(0xFFF1F1F1),
             child: Center(
                 child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 26.0),
                     child: Column(
                       /* mainAxisAlignment: MainAxisAlignment.spaceBetween, */
 

@@ -1,5 +1,5 @@
-import 'package:app/widgets/homeScreen/DailyBar.dart';
-import 'package:app/widgets/homeScreen/MacroBar.dart';
+import 'package:app/features/home/widgets/daily_bar.dart';
+import 'package:app/features/home/widgets/macro_bar.dart';
 import 'package:flutter/material.dart';
 
 class DailyBarsCard extends StatefulWidget {

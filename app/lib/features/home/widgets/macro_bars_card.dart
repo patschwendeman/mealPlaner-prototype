@@ -1,4 +1,4 @@
-import 'package:app/widgets/homeScreen/MacroBar.dart';
+import 'package:app/features/home/widgets/macro_bar.dart';
 import 'package:flutter/material.dart';
 
 class MacroBarsCard extends StatefulWidget {
