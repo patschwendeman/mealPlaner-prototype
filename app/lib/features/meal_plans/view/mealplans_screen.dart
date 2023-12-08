@@ -1,4 +1,4 @@
-import 'package:app/features/mealplans/view/mealplans_view.dart';
+import 'package:app/features/meal_plans/view/mealplans_view.dart';
 import 'package:flutter/material.dart';
 
 class MealPlansScreen extends StatelessWidget {

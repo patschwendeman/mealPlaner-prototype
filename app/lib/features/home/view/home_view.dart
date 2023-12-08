@@ -1,7 +1,7 @@
 import 'package:app/features/home/widgets/daily_bars_card.dart';
 import 'package:app/features/home/widgets/macro_bars_card.dart';
 import 'package:app/features/home/widgets/pie_chart_card.dart';
-import 'package:app/shared/widgets/bottom_nav.dart';
+import 'package:app/shared/widgets/bottom_nav/bottom_nav.dart';
 import 'package:flutter/material.dart';
 import 'package:app/shared/variables/colors.dart';
 
