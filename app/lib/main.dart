@@ -1,6 +1,4 @@
-
 import 'package:app/features/home/view/home_screen.dart';
-import 'package:app/features/searchScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +15,6 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
           '/': (context) => const HomeScreen(),
-          '/search': (context) => const SearchScreen(),
-          
-        }
-      );
+        });
   }
 }
