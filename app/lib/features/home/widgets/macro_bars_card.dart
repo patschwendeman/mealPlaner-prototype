@@ -16,7 +16,7 @@ class _MacroBarsCardState extends State<MacroBarsCard> {
       padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
       margin: EdgeInsets.symmetric(vertical: 8.0),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: const Row(
