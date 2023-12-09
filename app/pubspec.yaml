@@ -66,6 +66,7 @@ flutter:
     - assets/Home2.png
     - assets/Order2.png
     - assets/Search2.png
+    - assets/placeholder/mealCard.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
