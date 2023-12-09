@@ -2,7 +2,7 @@ import 'package:app/shared/variables/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key});
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
