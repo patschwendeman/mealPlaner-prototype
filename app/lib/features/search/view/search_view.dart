@@ -12,30 +12,27 @@ class SearchView extends StatelessWidget {
       bottomNavigationBar: const BottomNav(),
       body: SafeArea(
         child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
           color: AppColors.grey,
           child: CustomScrollView(
-            physics: const BouncingScrollPhysics(),
-            slivers: <Widget>[
-              const CustomAppBar(),
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (BuildContext context, int index) {
-                    return Container(
-                      color: Colors.transparent,
-                      height: 100.0,
-                      child: Center(
-                        child: Text('$index',
-                            textScaleFactor: 5.0),
-                      ),
-                    );
-                  },
-                  childCount: 20,
-                ),
+          physics: const BouncingScrollPhysics(),
+          slivers: <Widget>[
+            const CustomAppBar(),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, int index) {
+                  return Container(
+                    color: Colors.transparent,
+                    height: 100.0,
+                    child: Center(
+                      child: Text('$index', textScaleFactor: 5.0),
+                    ),
+                  );
+                },
+                childCount: 20,
               ),
-            ],
-          ),
+            ),
+          ],
+        ),
         ),
       ),
     );
