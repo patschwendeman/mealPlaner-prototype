@@ -15,7 +15,7 @@ class _FilterItemState extends State<FilterItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 14.0),
+        margin: const EdgeInsets.only(left: 16.0, top: 14.0, bottom: 14.0),
         width: 90,
         height: 50,
         decoration: BoxDecoration(

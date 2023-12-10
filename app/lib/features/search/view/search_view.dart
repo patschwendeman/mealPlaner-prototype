@@ -28,7 +28,7 @@ class SearchView extends StatelessWidget {
                 delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
                     return Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 26.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       color: Colors.transparent,
                       child: const Center(
                         child: MealCard(),
