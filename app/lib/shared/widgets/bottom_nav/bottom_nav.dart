@@ -22,15 +22,19 @@ class BottomNav extends StatelessWidget implements PreferredSizeWidget {
           children: [
             BottomNavButton(
               icon: SearchScreen(),
-              imagePath: 'assets/Search2.png',
+              imagePath: 'assets/icons/Search2.png',
             ),
             BottomNavButton(
               icon: HomeScreen(),
-              imagePath: 'assets/Home2.png',
+              imagePath: 'assets/icons/Home2.png',
             ),
             BottomNavButton(
               icon: MealPlansScreen(),
-              imagePath: 'assets/Order2.png',
+              imagePath: 'assets/icons/Order2.png',
+            ),
+            BottomNavButton(
+              icon: MealPlansScreen(),
+              imagePath: 'assets/icons/User.png',
             ),
           ],
         ));
