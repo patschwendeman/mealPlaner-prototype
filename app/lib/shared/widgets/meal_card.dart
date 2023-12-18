@@ -15,7 +15,7 @@ class _MealCardState extends State<MealCard> {
       height: 180,
       margin: const EdgeInsets.symmetric(vertical: 8.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(10.0),
         image: const DecorationImage(
           image: AssetImage(
               'assets/placeholder/mealCard.jpg'), 

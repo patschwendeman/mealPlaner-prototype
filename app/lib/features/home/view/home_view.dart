@@ -22,7 +22,7 @@ class HomeView extends StatelessWidget {
             color: AppColors.grey,
             child: Center(
                 child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 26.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Column(
                       /* mainAxisAlignment: MainAxisAlignment.spaceBetween, */
 

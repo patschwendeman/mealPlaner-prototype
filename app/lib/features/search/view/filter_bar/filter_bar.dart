@@ -18,7 +18,7 @@ class FilterBar extends StatelessWidget {
         itemCount: FilterCategories.filterCategoriesList.length,
         itemBuilder: (context, index) {
           final category = FilterCategories.filterCategoriesList[index];
-          return FilterItem(label: category['label'], color: category['color']);
+          return FilterItem(label: category['label'], color: category['color'], icon: category['icon']);
         },
       ),
     );

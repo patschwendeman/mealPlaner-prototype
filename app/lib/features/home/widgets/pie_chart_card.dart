@@ -29,7 +29,7 @@ class _PieChartCardState extends State<PieChartCard> {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 8.0),
       width: MediaQuery.of(context).size.width,
-      padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 7.0),
+      padding: const EdgeInsets.symmetric(horizontal: 110.0, vertical: 7.0),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10.0),

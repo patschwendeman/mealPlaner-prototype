@@ -68,6 +68,14 @@ flutter:
     - assets/icons/Order2.png
     - assets/icons/User.png
     - assets/icons/Search2.png
+    - assets/icons/plant.png
+    - assets/icons/protein.png
+    - assets/icons/fat.png
+    - assets/icons/carbs.png
+    - assets/icons/like.png
+
+
+
     - assets/placeholder/mealCard.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
