@@ -21,20 +21,46 @@ class _DailyBarsCardState extends State<DailyBarsCard> {
           color: AppColors.white,
           borderRadius: BorderRadius.circular(10.0),
         ),
-        child: const Column(children: [
-          MacroBar(color: AppColors.green, width: 1, amound: '100%', label: ''),
+        child: Stack(children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              DailyBar(color: AppColors.red, label: 'M'),
-              DailyBar(color: AppColors.green, label: 'T'),
-              DailyBar(color: AppColors.green, label: 'W'),
-              DailyBar(color: AppColors.green, label: 'T'),
-              DailyBar(color: AppColors.red, label: 'F'),
-              DailyBar(color: AppColors.green, label: 'S'),
-              DailyBar(color: AppColors.grey, label: 'S'),
+              const Text(
+                'Daily Calories',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16.0,
+                ),
+              ),
+              const SizedBox(
+                width: 8.0,
+              ),
+              Image.asset(
+                'assets/icons/arrow_bottom.png',
+                width: 14.0,
+              ),
             ],
           ),
+          Container(
+              padding: const EdgeInsets.only(top: 36.0),
+              child: const Column(children: [
+                MacroBar(
+                    color: AppColors.green,
+                    width: 1,
+                    amound: '100%',
+                    label: ''),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    DailyBar(color: AppColors.red, label: 'M'),
+                    DailyBar(color: AppColors.green, label: 'T'),
+                    DailyBar(color: AppColors.green, label: 'W'),
+                    DailyBar(color: AppColors.green, label: 'T'),
+                    DailyBar(color: AppColors.red, label: 'F'),
+                    DailyBar(color: AppColors.green, label: 'S'),
+                    DailyBar(color: AppColors.grey, label: 'S'),
+                  ],
+                ),
+              ])),
         ]));
   }
 }
