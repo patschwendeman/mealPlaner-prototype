@@ -1,6 +1,6 @@
 import 'package:app/features/search/bloc/search_bloc.dart';
-import 'package:app/features/search/view/filter_bar/filter_bar.dart';
-import 'package:app/features/search/view/top_bar/top_bar.dart';
+import 'package:app/features/search/widgets/filter_bar/filter_bar.dart';
+import 'package:app/features/search/widgets/top_bar/top_bar.dart';
 import 'package:app/shared/variables/colors.dart';
 import 'package:app/shared/widgets/bottom_nav/bottom_nav.dart';
 import 'package:app/shared/widgets/meal_card.dart';

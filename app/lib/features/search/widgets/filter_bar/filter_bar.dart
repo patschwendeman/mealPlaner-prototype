@@ -1,4 +1,5 @@
-import 'package:app/features/search/view/filter_bar/filter_item.dart';
+
+import 'package:app/features/search/widgets/filter_bar/filter_item.dart';
 import 'package:app/shared/variables/colors.dart';
 import 'package:app/shared/variables/filter_categories.dart';
 import 'package:flutter/material.dart';
