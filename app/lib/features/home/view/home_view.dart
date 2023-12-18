@@ -9,8 +9,6 @@ import 'package:app/shared/variables/colors.dart';
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,18 +19,26 @@ class HomeView extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             color: AppColors.grey,
             child: Center(
-                child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Column(
-                      /* mainAxisAlignment: MainAxisAlignment.spaceBetween, */
+              child: Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16.0, vertical: 8.0),
+                  child: const SingleChildScrollView(
+                      child: Column(
+                    /* mainAxisAlignment: MainAxisAlignment.spaceBetween, */
 
-                      children: [
-                        const PieChartCard(),
-                        MacroBarsCard(),
-                        const DailyBarsCard(),
-                        MealCard(),
-                      ],
-                    ))),
+                    children: [
+                      PieChartCard(),
+                      MacroBarsCard(),
+                      DailyBarsCard(),
+                      Divider(
+                        color: AppColors.white,
+                        height: 20, // Höhe der Linie
+                        thickness: 2, // Dicke der Linie
+                      ),
+                      MealCard(),
+                    ],
+                  ))),
+            ),
           ),
         ));
   }
