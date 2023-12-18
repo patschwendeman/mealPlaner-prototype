@@ -13,7 +13,7 @@ class _MealCardState extends State<MealCard> {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: 180,
-      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      margin: const EdgeInsets.only(top: 16.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
         image: const DecorationImage(
